@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		C72ACC18236A497C00F943AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72ACC17236A497C00F943AA /* Assets.xcassets */; };
 		C72ACC1B236A497C00F943AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72ACC1A236A497C00F943AA /* Preview Assets.xcassets */; };
 		C72ACC1E236A497C00F943AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72ACC1C236A497C00F943AA /* LaunchScreen.storyboard */; };
+		C72ACC26236A49BF00F943AA /* MainControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72ACC25236A49BF00F943AA /* MainControler.swift */; };
+		C72ACC29236A4B7C00F943AA /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = C72ACC28236A4B7C00F943AA /* LBTATools */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		C72ACC1A236A497C00F943AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C72ACC1D236A497C00F943AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C72ACC1F236A497C00F943AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C72ACC25236A49BF00F943AA /* MainControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainControler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72ACC29236A4B7C00F943AA /* LBTATools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				C72ACC1C236A497C00F943AA /* LaunchScreen.storyboard */,
 				C72ACC1F236A497C00F943AA /* Info.plist */,
 				C72ACC19236A497C00F943AA /* Preview Content */,
+				C72ACC25236A49BF00F943AA /* MainControler.swift */,
 			);
 			path = FB2019_lbta;
 			sourceTree = "<group>";
@@ -91,6 +96,9 @@
 			dependencies = (
 			);
 			name = FB2019_lbta;
+			packageProductDependencies = (
+				C72ACC28236A4B7C00F943AA /* LBTATools */,
+			);
 			productName = FB2019_lbta;
 			productReference = C72ACC0E236A497A00F943AA /* FB2019_lbta.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +127,9 @@
 				Base,
 			);
 			mainGroup = C72ACC05236A497A00F943AA;
+			packageReferences = (
+				C72ACC27236A4B7C00F943AA /* XCRemoteSwiftPackageReference "LBTATools" */,
+			);
 			productRefGroup = C72ACC0F236A497A00F943AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +160,7 @@
 				C72ACC12236A497A00F943AA /* AppDelegate.swift in Sources */,
 				C72ACC14236A497A00F943AA /* SceneDelegate.swift in Sources */,
 				C72ACC16236A497A00F943AA /* ContentView.swift in Sources */,
+				C72ACC26236A49BF00F943AA /* MainControler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C72ACC27236A4B7C00F943AA /* XCRemoteSwiftPackageReference "LBTATools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bhlvoong/LBTATools.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.12;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C72ACC28236A4B7C00F943AA /* LBTATools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C72ACC27236A4B7C00F943AA /* XCRemoteSwiftPackageReference "LBTATools" */;
+			productName = LBTATools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C72ACC06236A497A00F943AA /* Project object */;
 }
